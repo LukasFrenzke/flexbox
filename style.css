@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial Narrow", sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.active {
+    background-color: rgb(240, 240, 240);
+    color: #333;
+    padding: 1%;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
+}
+.contact{
+    padding: 1%;
+}
+
+.carousel {
+    background-color: #ccc;
+    padding: 2rem;
+    height: 20rem;
+    width: auto ;
+}
+
+.h2one {
+    text-align: center;
+    font-size: 18pt;
+}
+
+span {
+    font-size: 12pt;
+}
+
+section {
+    text-align: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+article{
+    background-color: #ccc;
+    padding: 1rem;
+    height: 20rem;
+    width: 30%;
+    border: 0  ;
+}
+
+form {
+    border-top: 0.25rem solid grey;
+    margin-top: 2rem;
+}
+
+input, textarea {
+    display: flex;
+    width: 80%;
+    padding: 0.5rem;
+    margin: 1.25rem auto;
+}
+footer{
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: flex-start;
+}
+.ulone{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.ultwo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.ulthree{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.litwo{
+    display: flex;
+    padding: 0.2rem;
+}
+.btn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 961px) {
+    .carousel{
+        display: flex;
+    }
+    .article{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article{
+        background-color: #ccc;
+        padding: 1rem;
+        height: 10rem;
+        width: 80%;
+        border: 0  ;
+        margin: 1%;
+    }
+
+    .h2one{
+        font-size: 25pt;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+    .h2two {
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+        font-size: 25pt;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ulone, .ultwo, .ulthree {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 12pt;
+        font-weight: normal;
+        
+    }
+
+    .litwo{
+        padding: 0;
+        padding-top: 1%;
+    }
+}
